@@ -1,0 +1,156 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (min-width: 300px) and (max-width: 880px){
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "inicio inicio"
+                            "inicio inicio"
+                            "baixo baixo";
+    }
+    .inicio{
+        grid-area: inicio;
+        display: grid;
+        background: linear-gradient(200deg, rgb(87, 163, 86) 12%, rgb(45, 88, 44) 88%);
+        /* border-bottom-left-radius: 45px; */
+        border-bottom-right-radius: 55px;
+        height: 60vh;
+    }
+    .baixo{
+        grid-area: baixo;
+        display: grid;
+        grid-template-areas: "text text"
+                             "fim fim";
+        background-color: #fff;
+    }
+    .text{
+        grid-area: text;
+        margin-bottom: 0%;
+    }
+    .fim{
+        grid-area: fim;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .style{
+        background: linear-gradient(750deg, rgb(87, 163, 86) 5%, rgb(45, 88, 44) 95%);
+        display: flex;
+        flex-direction: column; 
+        width: 280px;
+        float: right;
+        margin-left: 28.8%;
+        margin-top: 10px;
+        margin-right: 0%;
+        height: 100px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    /*Inicio*/
+    .navbar{
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 span{
+        color: #000;
+    }
+    .navbar h1{
+        font-size: 28px;
+        padding-top: 5px;
+        text-shadow: 2px 2px 8px #222;
+    }
+    .navbar ul li{
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+    .img img{
+        margin-left: 5%;
+        float: right;
+        filter: drop-shadow(-19px 25px 13px #222);
+    }
+    .img h1{
+        margin-left: 30px;
+        font-size: 40px;
+        margin-top: 50px;
+        color: #fff;
+        text-shadow: 6px 2px 8px #222;
+    }
+    /*Meio*/
+    h3 a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .text ul li{
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 35px;
+        margin-bottom: 0px;
+        color: #666;
+    }
+    .moda{
+        font-size: 18px;
+    }
+    #active{
+        color: black;
+    }
+    #num{
+        position: relative;
+        margin-top: -15px;
+        margin-right: 32px ;
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #num li{
+        font-size: 20px;
+        background: #666;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+        padding-right: 0%;
+        padding-bottom: 0%;
+        text-align: center;
+        border-radius: 50%;
+        margin-bottom: 0%;
+    }
+    .text #act{
+        color: rgb(254, 160, 52);
+        background: #000;
+    }
+    /*Fim*/
+    .int{
+        display: flex;
+        justify-content: space-around ;
+    }
+    #h2{
+        position: relative;
+        margin-bottom: 0%;
+        text-align: right;
+        padding-right: 100px;
+        color: #000;
+        text-shadow: 0px 0px 5px #555;
+    }
+    .movel{
+        position: relative;
+        margin-left: -28%;
+        filter: drop-shadow(-5px 8px 10px #222);
+    }
+    .camisa{
+        padding-top: 8px;
+        filter: drop-shadow(0px 8px 8px #222);
+    }
+    .int h3{
+        width: 50px;
+        color: #fff;
+    }
+}    
